@@ -6,6 +6,8 @@ import { Body, Controller, Post, ValidationPipe } from '@nestjs/common';
 export class AuthController {
   constructor(private authService: AuthService) {}
 
+
+  //회원가입
   @Post('/signup')
   signUp(
     @Body(ValidationPipe) authCredentialsDto: AuthCredentialsDto,
