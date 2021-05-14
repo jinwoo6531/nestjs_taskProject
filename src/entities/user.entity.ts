@@ -24,6 +24,7 @@ export class User extends BaseEntity {
   @Column()
   salt: string;
 
+  //OneToMany , ManyToOne 확인하기
   @OneToMany((type) => Task, (task) => task.user, { eager: true })
   tasks: Task[];
 
