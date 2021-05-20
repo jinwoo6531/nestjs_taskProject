@@ -3,7 +3,7 @@ import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 import { TaskStatus } from './task-status.enum';
 import { TaskRepository } from './task.repository';
 import { TasksService } from './tasks.service';
-
+//강의 실습
 const mockUser = { username: 'Test user' };
 
 const mockTaskRepository = () => ({
